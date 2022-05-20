@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,7 @@ namespace FinalProject
 
         private void BtnAdminDashBoard_Click(object sender, EventArgs e)
         {
+            LoadForm(new AdminProfile());
         }
 
         private void BtnUsers_Click(object sender, EventArgs e)
@@ -43,6 +45,12 @@ namespace FinalProject
 
         private void BtnProducts_Click(object sender, EventArgs e)
         {
+            LoadForm(new ProductForm());
+        }
+
+        private void BtnCategories_Click(object sender, EventArgs e)
+        {
+            LoadForm(new CategoriesForm());
         }
     }
 }

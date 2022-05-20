@@ -30,7 +30,7 @@ namespace FinalProject
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TlpAdminNavigation = new System.Windows.Forms.TableLayoutPanel();
             this.BtnAdminDashBoard = new System.Windows.Forms.Button();
             this.BtnUsers = new System.Windows.Forms.Button();
             this.BtnProducts = new System.Windows.Forms.Button();
@@ -38,44 +38,47 @@ namespace FinalProject
             this.PnlAdminMain = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.TlpAdminNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Controls.Add(this.TlpAdminNavigation);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 664);
             this.panel1.TabIndex = 1;
             // 
-            // tableLayoutPanel1
+            // TlpAdminNavigation
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.BtnAdminDashBoard, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BtnUsers, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.BtnProducts, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BtnCategories, 0, 5);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 7;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.18033F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.81967F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 154F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(234, 661);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.TlpAdminNavigation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TlpAdminNavigation.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.TlpAdminNavigation.ColumnCount = 1;
+            this.TlpAdminNavigation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TlpAdminNavigation.Controls.Add(this.BtnAdminDashBoard, 0, 2);
+            this.TlpAdminNavigation.Controls.Add(this.pictureBox1, 0, 0);
+            this.TlpAdminNavigation.Controls.Add(this.BtnUsers, 0, 3);
+            this.TlpAdminNavigation.Controls.Add(this.BtnProducts, 0, 4);
+            this.TlpAdminNavigation.Controls.Add(this.BtnCategories, 0, 5);
+            this.TlpAdminNavigation.Location = new System.Drawing.Point(6, 3);
+            this.TlpAdminNavigation.Name = "TlpAdminNavigation";
+            this.TlpAdminNavigation.RowCount = 7;
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.18033F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.81967F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 154F));
+            this.TlpAdminNavigation.Size = new System.Drawing.Size(234, 661);
+            this.TlpAdminNavigation.TabIndex = 0;
             // 
             // BtnAdminDashBoard
             // 
+            this.BtnAdminDashBoard.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnAdminDashBoard.Location = new System.Drawing.Point(3, 292);
             this.BtnAdminDashBoard.Name = "BtnAdminDashBoard";
             this.BtnAdminDashBoard.Size = new System.Drawing.Size(228, 42);
@@ -86,6 +89,7 @@ namespace FinalProject
             // 
             // BtnUsers
             // 
+            this.BtnUsers.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnUsers.Location = new System.Drawing.Point(3, 350);
             this.BtnUsers.Name = "BtnUsers";
             this.BtnUsers.Size = new System.Drawing.Size(228, 42);
@@ -96,6 +100,7 @@ namespace FinalProject
             // 
             // BtnProducts
             // 
+            this.BtnProducts.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnProducts.Location = new System.Drawing.Point(3, 407);
             this.BtnProducts.Name = "BtnProducts";
             this.BtnProducts.Size = new System.Drawing.Size(228, 42);
@@ -106,12 +111,14 @@ namespace FinalProject
             // 
             // BtnCategories
             // 
+            this.BtnCategories.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnCategories.Location = new System.Drawing.Point(3, 463);
             this.BtnCategories.Name = "BtnCategories";
             this.BtnCategories.Size = new System.Drawing.Size(228, 40);
             this.BtnCategories.TabIndex = 5;
             this.BtnCategories.Text = "Categories";
             this.BtnCategories.UseVisualStyleBackColor = true;
+            this.BtnCategories.Click += new System.EventHandler(this.BtnCategories_Click);
             // 
             // PnlAdminMain
             // 
@@ -142,7 +149,7 @@ namespace FinalProject
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Dashboard";
             this.panel1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.TlpAdminNavigation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -150,7 +157,7 @@ namespace FinalProject
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel TlpAdminNavigation;
         private System.Windows.Forms.Button BtnAdminDashBoard;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnUsers;

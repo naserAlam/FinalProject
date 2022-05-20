@@ -47,6 +47,9 @@ namespace FinalProject
             this.BtnSaveUser = new System.Windows.Forms.Button();
             this.BtnUpdateUser = new System.Windows.Forms.Button();
             this.BtnDeleteUser = new System.Windows.Forms.Button();
+            this.LblSearch = new System.Windows.Forms.Label();
+            this.TbSearchWord = new System.Windows.Forms.TextBox();
+            this.BtnSearch = new System.Windows.Forms.Button();
             this.TlpUserFields.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVUserList)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +75,7 @@ namespace FinalProject
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.37234F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.62766F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
-            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 252F));
+            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254F));
             this.TlpUserFields.Controls.Add(this.LblFirstName, 0, 0);
             this.TlpUserFields.Controls.Add(this.LblLastName, 2, 0);
             this.TlpUserFields.Controls.Add(this.LblContantNo, 0, 1);
@@ -102,7 +105,7 @@ namespace FinalProject
             this.LblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFirstName.Location = new System.Drawing.Point(3, 0);
             this.LblFirstName.Name = "LblFirstName";
-            this.LblFirstName.Size = new System.Drawing.Size(132, 25);
+            this.LblFirstName.Size = new System.Drawing.Size(131, 25);
             this.LblFirstName.TabIndex = 0;
             this.LblFirstName.Text = "First Name";
             this.LblFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -113,7 +116,7 @@ namespace FinalProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblLastName.AutoSize = true;
             this.LblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLastName.Location = new System.Drawing.Point(393, 0);
+            this.LblLastName.Location = new System.Drawing.Point(391, 0);
             this.LblLastName.Name = "LblLastName";
             this.LblLastName.Size = new System.Drawing.Size(142, 25);
             this.LblLastName.TabIndex = 0;
@@ -128,7 +131,7 @@ namespace FinalProject
             this.LblContantNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblContantNo.Location = new System.Drawing.Point(3, 36);
             this.LblContantNo.Name = "LblContantNo";
-            this.LblContantNo.Size = new System.Drawing.Size(132, 25);
+            this.LblContantNo.Size = new System.Drawing.Size(131, 25);
             this.LblContantNo.TabIndex = 1;
             this.LblContantNo.Text = "Contact No.";
             this.LblContantNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -139,7 +142,7 @@ namespace FinalProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblEmail.AutoSize = true;
             this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.Location = new System.Drawing.Point(393, 36);
+            this.LblEmail.Location = new System.Drawing.Point(391, 36);
             this.LblEmail.Name = "LblEmail";
             this.LblEmail.Size = new System.Drawing.Size(142, 25);
             this.LblEmail.TabIndex = 2;
@@ -154,7 +157,7 @@ namespace FinalProject
             this.LblUserType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUserType.Location = new System.Drawing.Point(3, 72);
             this.LblUserType.Name = "LblUserType";
-            this.LblUserType.Size = new System.Drawing.Size(132, 25);
+            this.LblUserType.Size = new System.Drawing.Size(131, 25);
             this.LblUserType.TabIndex = 3;
             this.LblUserType.Text = "User Type";
             this.LblUserType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -165,7 +168,7 @@ namespace FinalProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblUsername.AutoSize = true;
             this.LblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUsername.Location = new System.Drawing.Point(393, 72);
+            this.LblUsername.Location = new System.Drawing.Point(391, 72);
             this.LblUsername.Name = "LblUsername";
             this.LblUsername.Size = new System.Drawing.Size(142, 25);
             this.LblUsername.TabIndex = 4;
@@ -176,36 +179,36 @@ namespace FinalProject
             // 
             this.TbFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbFirstName.Location = new System.Drawing.Point(141, 3);
+            this.TbFirstName.Location = new System.Drawing.Point(140, 3);
             this.TbFirstName.Name = "TbFirstName";
-            this.TbFirstName.Size = new System.Drawing.Size(246, 26);
+            this.TbFirstName.Size = new System.Drawing.Size(245, 26);
             this.TbFirstName.TabIndex = 5;
             // 
             // TbLastName
             // 
             this.TbLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbLastName.Location = new System.Drawing.Point(541, 3);
+            this.TbLastName.Location = new System.Drawing.Point(539, 3);
             this.TbLastName.Name = "TbLastName";
-            this.TbLastName.Size = new System.Drawing.Size(247, 26);
+            this.TbLastName.Size = new System.Drawing.Size(249, 26);
             this.TbLastName.TabIndex = 5;
             // 
             // TbContactNo
             // 
             this.TbContactNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbContactNo.Location = new System.Drawing.Point(141, 39);
+            this.TbContactNo.Location = new System.Drawing.Point(140, 39);
             this.TbContactNo.Name = "TbContactNo";
-            this.TbContactNo.Size = new System.Drawing.Size(246, 26);
+            this.TbContactNo.Size = new System.Drawing.Size(245, 26);
             this.TbContactNo.TabIndex = 5;
             // 
             // TbUsername
             // 
             this.TbUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbUsername.Location = new System.Drawing.Point(541, 75);
+            this.TbUsername.Location = new System.Drawing.Point(539, 75);
             this.TbUsername.Name = "TbUsername";
-            this.TbUsername.Size = new System.Drawing.Size(247, 26);
+            this.TbUsername.Size = new System.Drawing.Size(249, 26);
             this.TbUsername.TabIndex = 5;
             // 
             // CbUserType
@@ -213,18 +216,18 @@ namespace FinalProject
             this.CbUserType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CbUserType.FormattingEnabled = true;
-            this.CbUserType.Location = new System.Drawing.Point(141, 75);
+            this.CbUserType.Location = new System.Drawing.Point(140, 75);
             this.CbUserType.Name = "CbUserType";
-            this.CbUserType.Size = new System.Drawing.Size(246, 28);
+            this.CbUserType.Size = new System.Drawing.Size(245, 28);
             this.CbUserType.TabIndex = 6;
             // 
             // TbEmail
             // 
             this.TbEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbEmail.Location = new System.Drawing.Point(541, 39);
+            this.TbEmail.Location = new System.Drawing.Point(539, 39);
             this.TbEmail.Name = "TbEmail";
-            this.TbEmail.Size = new System.Drawing.Size(247, 26);
+            this.TbEmail.Size = new System.Drawing.Size(249, 26);
             this.TbEmail.TabIndex = 5;
             // 
             // DGVUserList
@@ -253,7 +256,7 @@ namespace FinalProject
             // BtnUpdateUser
             // 
             this.BtnUpdateUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUpdateUser.Location = new System.Drawing.Point(155, 189);
+            this.BtnUpdateUser.Location = new System.Drawing.Point(136, 189);
             this.BtnUpdateUser.Name = "BtnUpdateUser";
             this.BtnUpdateUser.Size = new System.Drawing.Size(118, 44);
             this.BtnUpdateUser.TabIndex = 3;
@@ -263,12 +266,42 @@ namespace FinalProject
             // BtnDeleteUser
             // 
             this.BtnDeleteUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDeleteUser.Location = new System.Drawing.Point(296, 189);
+            this.BtnDeleteUser.Location = new System.Drawing.Point(260, 189);
             this.BtnDeleteUser.Name = "BtnDeleteUser";
             this.BtnDeleteUser.Size = new System.Drawing.Size(118, 44);
             this.BtnDeleteUser.TabIndex = 4;
             this.BtnDeleteUser.Text = "Delete";
             this.BtnDeleteUser.UseVisualStyleBackColor = true;
+            // 
+            // LblSearch
+            // 
+            this.LblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblSearch.AutoSize = true;
+            this.LblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSearch.Location = new System.Drawing.Point(384, 199);
+            this.LblSearch.Name = "LblSearch";
+            this.LblSearch.Size = new System.Drawing.Size(75, 25);
+            this.LblSearch.TabIndex = 11;
+            this.LblSearch.Text = "Search";
+            this.LblSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TbSearchWord
+            // 
+            this.TbSearchWord.Location = new System.Drawing.Point(465, 200);
+            this.TbSearchWord.Name = "TbSearchWord";
+            this.TbSearchWord.Size = new System.Drawing.Size(214, 26);
+            this.TbSearchWord.TabIndex = 12;
+            // 
+            // BtnSearch
+            // 
+            this.BtnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearch.Location = new System.Drawing.Point(685, 189);
+            this.BtnSearch.Name = "BtnSearch";
+            this.BtnSearch.Size = new System.Drawing.Size(118, 44);
+            this.BtnSearch.TabIndex = 13;
+            this.BtnSearch.Text = "Search";
+            this.BtnSearch.UseVisualStyleBackColor = true;
             // 
             // UsersForm
             // 
@@ -276,6 +309,9 @@ namespace FinalProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(815, 664);
+            this.Controls.Add(this.LblSearch);
+            this.Controls.Add(this.TbSearchWord);
+            this.Controls.Add(this.BtnSearch);
             this.Controls.Add(this.BtnDeleteUser);
             this.Controls.Add(this.BtnUpdateUser);
             this.Controls.Add(this.BtnSaveUser);
@@ -314,5 +350,8 @@ namespace FinalProject
         private System.Windows.Forms.TextBox TbUsername;
         private System.Windows.Forms.ComboBox CbUserType;
         private System.Windows.Forms.TextBox TbEmail;
+        private System.Windows.Forms.Label LblSearch;
+        private System.Windows.Forms.TextBox TbSearchWord;
+        private System.Windows.Forms.Button BtnSearch;
     }
 }

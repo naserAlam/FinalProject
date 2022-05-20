@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject
+namespace FinalProject.Forms
 {
-    public partial class UsersForm : Form
+    public partial class CategoriesForm : Form
     {
-        public UsersForm()
+        public CategoriesForm()
         {
             InitializeComponent();
         }
-
-        private void UsersForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

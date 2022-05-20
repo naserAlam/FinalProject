@@ -37,8 +37,8 @@ namespace FinalProject.Forms
             this.LblUnit = new System.Windows.Forms.Label();
             this.TbProductName = new System.Windows.Forms.TextBox();
             this.TbPrice = new System.Windows.Forms.TextBox();
-            this.CbProductCategory = new System.Windows.Forms.ComboBox();
             this.TbUnit = new System.Windows.Forms.TextBox();
+            this.CbProductCategory = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.LblDescription = new System.Windows.Forms.Label();
             this.TbDescription = new System.Windows.Forms.TextBox();
@@ -46,6 +46,9 @@ namespace FinalProject.Forms
             this.BtnUpdateProduct = new System.Windows.Forms.Button();
             this.BtnSaveProduct = new System.Windows.Forms.Button();
             this.DGVProductList = new System.Windows.Forms.DataGridView();
+            this.LblSearch = new System.Windows.Forms.Label();
+            this.TbSearchWord = new System.Windows.Forms.TextBox();
+            this.BtnSearch = new System.Windows.Forms.Button();
             this.TlpUserFields.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProductList)).BeginInit();
@@ -73,7 +76,7 @@ namespace FinalProject.Forms
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.37234F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.62766F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
-            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 252F));
+            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
             this.TlpUserFields.Controls.Add(this.LblProductName, 0, 0);
             this.TlpUserFields.Controls.Add(this.LblCategory, 2, 0);
             this.TlpUserFields.Controls.Add(this.LblPrice, 0, 1);
@@ -98,7 +101,7 @@ namespace FinalProject.Forms
             this.LblProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblProductName.Location = new System.Drawing.Point(3, 0);
             this.LblProductName.Name = "LblProductName";
-            this.LblProductName.Size = new System.Drawing.Size(132, 25);
+            this.LblProductName.Size = new System.Drawing.Size(131, 25);
             this.LblProductName.TabIndex = 0;
             this.LblProductName.Text = "Product";
             this.LblProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,7 +112,7 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblCategory.AutoSize = true;
             this.LblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCategory.Location = new System.Drawing.Point(393, 0);
+            this.LblCategory.Location = new System.Drawing.Point(392, 0);
             this.LblCategory.Name = "LblCategory";
             this.LblCategory.Size = new System.Drawing.Size(142, 25);
             this.LblCategory.TabIndex = 0;
@@ -124,7 +127,7 @@ namespace FinalProject.Forms
             this.LblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPrice.Location = new System.Drawing.Point(3, 38);
             this.LblPrice.Name = "LblPrice";
-            this.LblPrice.Size = new System.Drawing.Size(132, 25);
+            this.LblPrice.Size = new System.Drawing.Size(131, 25);
             this.LblPrice.TabIndex = 1;
             this.LblPrice.Text = "Price";
             this.LblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,7 +138,7 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblUnit.AutoSize = true;
             this.LblUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUnit.Location = new System.Drawing.Point(393, 38);
+            this.LblUnit.Location = new System.Drawing.Point(392, 38);
             this.LblUnit.Name = "LblUnit";
             this.LblUnit.Size = new System.Drawing.Size(142, 25);
             this.LblUnit.TabIndex = 2;
@@ -146,7 +149,7 @@ namespace FinalProject.Forms
             // 
             this.TbProductName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbProductName.Location = new System.Drawing.Point(141, 3);
+            this.TbProductName.Location = new System.Drawing.Point(140, 3);
             this.TbProductName.Name = "TbProductName";
             this.TbProductName.Size = new System.Drawing.Size(246, 26);
             this.TbProductName.TabIndex = 5;
@@ -155,29 +158,29 @@ namespace FinalProject.Forms
             // 
             this.TbPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbPrice.Location = new System.Drawing.Point(141, 41);
+            this.TbPrice.Location = new System.Drawing.Point(140, 41);
             this.TbPrice.Name = "TbPrice";
             this.TbPrice.Size = new System.Drawing.Size(246, 26);
             this.TbPrice.TabIndex = 5;
+            // 
+            // TbUnit
+            // 
+            this.TbUnit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TbUnit.Location = new System.Drawing.Point(540, 41);
+            this.TbUnit.Name = "TbUnit";
+            this.TbUnit.Size = new System.Drawing.Size(248, 26);
+            this.TbUnit.TabIndex = 5;
             // 
             // CbProductCategory
             // 
             this.CbProductCategory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CbProductCategory.FormattingEnabled = true;
-            this.CbProductCategory.Location = new System.Drawing.Point(541, 3);
+            this.CbProductCategory.Location = new System.Drawing.Point(540, 3);
             this.CbProductCategory.Name = "CbProductCategory";
-            this.CbProductCategory.Size = new System.Drawing.Size(247, 28);
+            this.CbProductCategory.Size = new System.Drawing.Size(248, 28);
             this.CbProductCategory.TabIndex = 6;
-            // 
-            // TbUnit
-            // 
-            this.TbUnit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbUnit.Location = new System.Drawing.Point(541, 41);
-            this.TbUnit.Name = "TbUnit";
-            this.TbUnit.Size = new System.Drawing.Size(247, 26);
-            this.TbUnit.TabIndex = 5;
             // 
             // tableLayoutPanel1
             // 
@@ -218,7 +221,7 @@ namespace FinalProject.Forms
             // BtnDeleteProduct
             // 
             this.BtnDeleteProduct.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDeleteProduct.Location = new System.Drawing.Point(296, 187);
+            this.BtnDeleteProduct.Location = new System.Drawing.Point(260, 187);
             this.BtnDeleteProduct.Name = "BtnDeleteProduct";
             this.BtnDeleteProduct.Size = new System.Drawing.Size(118, 44);
             this.BtnDeleteProduct.TabIndex = 7;
@@ -228,7 +231,7 @@ namespace FinalProject.Forms
             // BtnUpdateProduct
             // 
             this.BtnUpdateProduct.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnUpdateProduct.Location = new System.Drawing.Point(155, 187);
+            this.BtnUpdateProduct.Location = new System.Drawing.Point(136, 187);
             this.BtnUpdateProduct.Name = "BtnUpdateProduct";
             this.BtnUpdateProduct.Size = new System.Drawing.Size(118, 44);
             this.BtnUpdateProduct.TabIndex = 6;
@@ -258,11 +261,44 @@ namespace FinalProject.Forms
             this.DGVProductList.Size = new System.Drawing.Size(791, 413);
             this.DGVProductList.TabIndex = 8;
             // 
+            // LblSearch
+            // 
+            this.LblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblSearch.AutoSize = true;
+            this.LblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSearch.Location = new System.Drawing.Point(384, 198);
+            this.LblSearch.Name = "LblSearch";
+            this.LblSearch.Size = new System.Drawing.Size(75, 25);
+            this.LblSearch.TabIndex = 11;
+            this.LblSearch.Text = "Search";
+            this.LblSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TbSearchWord
+            // 
+            this.TbSearchWord.Location = new System.Drawing.Point(465, 198);
+            this.TbSearchWord.Name = "TbSearchWord";
+            this.TbSearchWord.Size = new System.Drawing.Size(214, 26);
+            this.TbSearchWord.TabIndex = 12;
+            // 
+            // BtnSearch
+            // 
+            this.BtnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearch.Location = new System.Drawing.Point(685, 187);
+            this.BtnSearch.Name = "BtnSearch";
+            this.BtnSearch.Size = new System.Drawing.Size(118, 44);
+            this.BtnSearch.TabIndex = 13;
+            this.BtnSearch.Text = "Search";
+            this.BtnSearch.UseVisualStyleBackColor = true;
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 664);
+            this.Controls.Add(this.LblSearch);
+            this.Controls.Add(this.TbSearchWord);
+            this.Controls.Add(this.BtnSearch);
             this.Controls.Add(this.DGVProductList);
             this.Controls.Add(this.BtnDeleteProduct);
             this.Controls.Add(this.BtnUpdateProduct);
@@ -304,5 +340,8 @@ namespace FinalProject.Forms
         private System.Windows.Forms.Button BtnUpdateProduct;
         private System.Windows.Forms.Button BtnSaveProduct;
         private System.Windows.Forms.DataGridView DGVProductList;
+        private System.Windows.Forms.Label LblSearch;
+        private System.Windows.Forms.TextBox TbSearchWord;
+        private System.Windows.Forms.Button BtnSearch;
     }
 }
