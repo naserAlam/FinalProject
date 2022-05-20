@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject
+namespace FinalProject.Forms
 {
-    public partial class UsersForm : Form
+    public partial class ProductForm : Form
     {
-        public UsersForm()
+        public ProductForm()
         {
             InitializeComponent();
         }
 
-        private void UsersForm_Load(object sender, EventArgs e)
+        private void ProductForm_Load(object sender, EventArgs e)
         {
 
         }

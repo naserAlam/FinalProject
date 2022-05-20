@@ -40,5 +40,9 @@ namespace FinalProject
         {
             LoadForm(new UsersForm());
         }
+
+        private void BtnProducts_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

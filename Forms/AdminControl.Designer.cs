@@ -34,8 +34,8 @@ namespace FinalProject
             this.BtnAdminDashBoard = new System.Windows.Forms.Button();
             this.BtnUsers = new System.Windows.Forms.Button();
             this.BtnProducts = new System.Windows.Forms.Button();
-            this.PnlAdminMain = new System.Windows.Forms.Panel();
             this.BtnCategories = new System.Windows.Forms.Button();
+            this.PnlAdminMain = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -102,14 +102,7 @@ namespace FinalProject
             this.BtnProducts.TabIndex = 4;
             this.BtnProducts.Text = "Products";
             this.BtnProducts.UseVisualStyleBackColor = true;
-            // 
-            // PnlAdminMain
-            // 
-            this.PnlAdminMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlAdminMain.Location = new System.Drawing.Point(243, 0);
-            this.PnlAdminMain.Name = "PnlAdminMain";
-            this.PnlAdminMain.Size = new System.Drawing.Size(815, 664);
-            this.PnlAdminMain.TabIndex = 2;
+            this.BtnProducts.Click += new System.EventHandler(this.BtnProducts_Click);
             // 
             // BtnCategories
             // 
@@ -119,6 +112,14 @@ namespace FinalProject
             this.BtnCategories.TabIndex = 5;
             this.BtnCategories.Text = "Categories";
             this.BtnCategories.UseVisualStyleBackColor = true;
+            // 
+            // PnlAdminMain
+            // 
+            this.PnlAdminMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlAdminMain.Location = new System.Drawing.Point(243, 0);
+            this.PnlAdminMain.Name = "PnlAdminMain";
+            this.PnlAdminMain.Size = new System.Drawing.Size(815, 664);
+            this.PnlAdminMain.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -130,14 +131,14 @@ namespace FinalProject
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // AdminDashboard
+            // AdminControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 664);
             this.Controls.Add(this.PnlAdminMain);
             this.Controls.Add(this.panel1);
-            this.Name = "AdminDashboard";
+            this.Name = "AdminControl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Dashboard";
             this.panel1.ResumeLayout(false);
