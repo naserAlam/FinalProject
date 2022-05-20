@@ -18,6 +18,12 @@ namespace FinalProject
             InitializeComponent();
         }
 
+        /** Load Form Method
+         * Takes a windows form as parameter
+         * Checks if any other form is open in the panel
+         * Closes the active form(s)
+         * Then launchs the requested form.
+         */
         public void LoadForm(Form Form)
         {
             if (this.PnlAdminMain.Controls.Count >0)

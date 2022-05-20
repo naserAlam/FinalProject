@@ -33,13 +33,13 @@ namespace FinalProject
             this.TlpUserFields = new System.Windows.Forms.TableLayoutPanel();
             this.LblFirstName = new System.Windows.Forms.Label();
             this.LblLastName = new System.Windows.Forms.Label();
-            this.LblContantNo = new System.Windows.Forms.Label();
+            this.LblPassword = new System.Windows.Forms.Label();
             this.LblEmail = new System.Windows.Forms.Label();
             this.LblUserType = new System.Windows.Forms.Label();
             this.LblUsername = new System.Windows.Forms.Label();
             this.TbFirstName = new System.Windows.Forms.TextBox();
             this.TbLastName = new System.Windows.Forms.TextBox();
-            this.TbContactNo = new System.Windows.Forms.TextBox();
+            this.TbPassword = new System.Windows.Forms.TextBox();
             this.TbUsername = new System.Windows.Forms.TextBox();
             this.CbUserType = new System.Windows.Forms.ComboBox();
             this.TbEmail = new System.Windows.Forms.TextBox();
@@ -75,19 +75,19 @@ namespace FinalProject
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.37234F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.62766F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
-            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254F));
+            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 255F));
             this.TlpUserFields.Controls.Add(this.LblFirstName, 0, 0);
             this.TlpUserFields.Controls.Add(this.LblLastName, 2, 0);
-            this.TlpUserFields.Controls.Add(this.LblContantNo, 0, 1);
-            this.TlpUserFields.Controls.Add(this.LblEmail, 2, 1);
             this.TlpUserFields.Controls.Add(this.LblUserType, 0, 2);
-            this.TlpUserFields.Controls.Add(this.LblUsername, 2, 2);
             this.TlpUserFields.Controls.Add(this.TbFirstName, 1, 0);
             this.TlpUserFields.Controls.Add(this.TbLastName, 3, 0);
-            this.TlpUserFields.Controls.Add(this.TbContactNo, 1, 1);
-            this.TlpUserFields.Controls.Add(this.TbUsername, 3, 2);
             this.TlpUserFields.Controls.Add(this.CbUserType, 1, 2);
-            this.TlpUserFields.Controls.Add(this.TbEmail, 3, 1);
+            this.TlpUserFields.Controls.Add(this.LblUsername, 0, 1);
+            this.TlpUserFields.Controls.Add(this.TbUsername, 1, 1);
+            this.TlpUserFields.Controls.Add(this.LblPassword, 2, 1);
+            this.TlpUserFields.Controls.Add(this.LblEmail, 2, 2);
+            this.TlpUserFields.Controls.Add(this.TbPassword, 3, 1);
+            this.TlpUserFields.Controls.Add(this.TbEmail, 3, 2);
             this.TlpUserFields.Location = new System.Drawing.Point(12, 74);
             this.TlpUserFields.Name = "TlpUserFields";
             this.TlpUserFields.RowCount = 3;
@@ -116,25 +116,25 @@ namespace FinalProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblLastName.AutoSize = true;
             this.LblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLastName.Location = new System.Drawing.Point(391, 0);
+            this.LblLastName.Location = new System.Drawing.Point(390, 0);
             this.LblLastName.Name = "LblLastName";
             this.LblLastName.Size = new System.Drawing.Size(142, 25);
             this.LblLastName.TabIndex = 0;
             this.LblLastName.Text = "Last Name";
             this.LblLastName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // LblContantNo
+            // LblPassword
             // 
-            this.LblContantNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LblPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblContantNo.AutoSize = true;
-            this.LblContantNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblContantNo.Location = new System.Drawing.Point(3, 36);
-            this.LblContantNo.Name = "LblContantNo";
-            this.LblContantNo.Size = new System.Drawing.Size(131, 25);
-            this.LblContantNo.TabIndex = 1;
-            this.LblContantNo.Text = "Contact No.";
-            this.LblContantNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblPassword.AutoSize = true;
+            this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPassword.Location = new System.Drawing.Point(390, 36);
+            this.LblPassword.Name = "LblPassword";
+            this.LblPassword.Size = new System.Drawing.Size(142, 25);
+            this.LblPassword.TabIndex = 1;
+            this.LblPassword.Text = "Password";
+            this.LblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LblEmail
             // 
@@ -142,7 +142,7 @@ namespace FinalProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblEmail.AutoSize = true;
             this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.Location = new System.Drawing.Point(391, 36);
+            this.LblEmail.Location = new System.Drawing.Point(390, 72);
             this.LblEmail.Name = "LblEmail";
             this.LblEmail.Size = new System.Drawing.Size(142, 25);
             this.LblEmail.TabIndex = 2;
@@ -168,9 +168,9 @@ namespace FinalProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblUsername.AutoSize = true;
             this.LblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUsername.Location = new System.Drawing.Point(391, 72);
+            this.LblUsername.Location = new System.Drawing.Point(3, 36);
             this.LblUsername.Name = "LblUsername";
-            this.LblUsername.Size = new System.Drawing.Size(142, 25);
+            this.LblUsername.Size = new System.Drawing.Size(131, 25);
             this.LblUsername.TabIndex = 4;
             this.LblUsername.Text = "Username";
             this.LblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,53 +181,54 @@ namespace FinalProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TbFirstName.Location = new System.Drawing.Point(140, 3);
             this.TbFirstName.Name = "TbFirstName";
-            this.TbFirstName.Size = new System.Drawing.Size(245, 26);
+            this.TbFirstName.Size = new System.Drawing.Size(244, 26);
             this.TbFirstName.TabIndex = 5;
             // 
             // TbLastName
             // 
             this.TbLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbLastName.Location = new System.Drawing.Point(539, 3);
+            this.TbLastName.Location = new System.Drawing.Point(538, 3);
             this.TbLastName.Name = "TbLastName";
-            this.TbLastName.Size = new System.Drawing.Size(249, 26);
+            this.TbLastName.Size = new System.Drawing.Size(250, 26);
             this.TbLastName.TabIndex = 5;
             // 
-            // TbContactNo
+            // TbPassword
             // 
-            this.TbContactNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbContactNo.Location = new System.Drawing.Point(140, 39);
-            this.TbContactNo.Name = "TbContactNo";
-            this.TbContactNo.Size = new System.Drawing.Size(245, 26);
-            this.TbContactNo.TabIndex = 5;
+            this.TbPassword.Location = new System.Drawing.Point(538, 39);
+            this.TbPassword.Name = "TbPassword";
+            this.TbPassword.Size = new System.Drawing.Size(250, 26);
+            this.TbPassword.TabIndex = 5;
             // 
             // TbUsername
             // 
             this.TbUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbUsername.Location = new System.Drawing.Point(539, 75);
+            this.TbUsername.Location = new System.Drawing.Point(140, 39);
             this.TbUsername.Name = "TbUsername";
-            this.TbUsername.Size = new System.Drawing.Size(249, 26);
+            this.TbUsername.Size = new System.Drawing.Size(244, 26);
             this.TbUsername.TabIndex = 5;
             // 
             // CbUserType
             // 
             this.CbUserType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.CbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbUserType.FormattingEnabled = true;
             this.CbUserType.Location = new System.Drawing.Point(140, 75);
             this.CbUserType.Name = "CbUserType";
-            this.CbUserType.Size = new System.Drawing.Size(245, 28);
+            this.CbUserType.Size = new System.Drawing.Size(244, 28);
             this.CbUserType.TabIndex = 6;
             // 
             // TbEmail
             // 
             this.TbEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbEmail.Location = new System.Drawing.Point(539, 39);
+            this.TbEmail.Location = new System.Drawing.Point(538, 75);
             this.TbEmail.Name = "TbEmail";
-            this.TbEmail.Size = new System.Drawing.Size(249, 26);
+            this.TbEmail.Size = new System.Drawing.Size(250, 26);
             this.TbEmail.TabIndex = 5;
             // 
             // DGVUserList
@@ -252,6 +253,7 @@ namespace FinalProject
             this.BtnSaveUser.TabIndex = 2;
             this.BtnSaveUser.Text = "Save";
             this.BtnSaveUser.UseVisualStyleBackColor = true;
+            this.BtnSaveUser.Click += new System.EventHandler(this.BtnSaveUser_Click);
             // 
             // BtnUpdateUser
             // 
@@ -337,13 +339,13 @@ namespace FinalProject
         private System.Windows.Forms.Label LblFirstName;
         private System.Windows.Forms.DataGridView DGVUserList;
         private System.Windows.Forms.Label LblLastName;
-        private System.Windows.Forms.Label LblContantNo;
+        private System.Windows.Forms.Label LblPassword;
         private System.Windows.Forms.Label LblEmail;
         private System.Windows.Forms.Label LblUserType;
         private System.Windows.Forms.Label LblUsername;
         private System.Windows.Forms.TextBox TbFirstName;
         private System.Windows.Forms.TextBox TbLastName;
-        private System.Windows.Forms.TextBox TbContactNo;
+        private System.Windows.Forms.TextBox TbPassword;
         private System.Windows.Forms.Button BtnSaveUser;
         private System.Windows.Forms.Button BtnUpdateUser;
         private System.Windows.Forms.Button BtnDeleteUser;
