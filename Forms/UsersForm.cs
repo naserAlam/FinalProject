@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class AdminDashboard : Form
+    public partial class UsersForm : Form
     {
-        public AdminDashboard()
+        public UsersForm()
         {
             InitializeComponent();
         }
