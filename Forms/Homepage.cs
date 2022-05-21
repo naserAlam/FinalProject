@@ -39,7 +39,7 @@ namespace FinalProject
 
         private void BtnUsers_Click(object sender, EventArgs e)
         {
-            LoadForm(new UsersForm());
+            LoadForm(new SupplierCustomerForm());
         }
 
         private void BtnProducts_Click(object sender, EventArgs e)

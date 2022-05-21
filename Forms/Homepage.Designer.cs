@@ -31,13 +31,14 @@ namespace FinalProject
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.TlpAdminNavigation = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnUserProfile = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnUsers = new System.Windows.Forms.Button();
             this.BtnProducts = new System.Windows.Forms.Button();
             this.BtnCategories = new System.Windows.Forms.Button();
+            this.BtnUsers = new System.Windows.Forms.Button();
             this.BtnTransactions = new System.Windows.Forms.Button();
+            this.BtnUserProfile = new System.Windows.Forms.Button();
             this.PnlAdminMain = new System.Windows.Forms.Panel();
+            this.BtnContact = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.TlpAdminNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,59 +63,39 @@ namespace FinalProject
             this.TlpAdminNavigation.Controls.Add(this.pictureBox1, 0, 0);
             this.TlpAdminNavigation.Controls.Add(this.BtnProducts, 0, 4);
             this.TlpAdminNavigation.Controls.Add(this.BtnCategories, 0, 5);
-            this.TlpAdminNavigation.Controls.Add(this.BtnUsers, 0, 6);
             this.TlpAdminNavigation.Controls.Add(this.BtnTransactions, 0, 3);
             this.TlpAdminNavigation.Controls.Add(this.BtnUserProfile, 0, 2);
+            this.TlpAdminNavigation.Controls.Add(this.BtnUsers, 0, 7);
+            this.TlpAdminNavigation.Controls.Add(this.BtnContact, 0, 6);
             this.TlpAdminNavigation.Location = new System.Drawing.Point(6, 3);
             this.TlpAdminNavigation.Name = "TlpAdminNavigation";
-            this.TlpAdminNavigation.RowCount = 8;
+            this.TlpAdminNavigation.RowCount = 9;
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.18033F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.81967F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
-            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 102F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             this.TlpAdminNavigation.Size = new System.Drawing.Size(234, 661);
             this.TlpAdminNavigation.TabIndex = 0;
-            // 
-            // BtnUserProfile
-            // 
-            this.BtnUserProfile.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnUserProfile.Location = new System.Drawing.Point(3, 272);
-            this.BtnUserProfile.Name = "BtnUserProfile";
-            this.BtnUserProfile.Size = new System.Drawing.Size(228, 42);
-            this.BtnUserProfile.TabIndex = 1;
-            this.BtnUserProfile.Text = "User Profile";
-            this.BtnUserProfile.UseVisualStyleBackColor = true;
-            this.BtnUserProfile.Click += new System.EventHandler(this.BtnAdminDashBoard_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FinalProject.Properties.Resources.manager;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 226);
+            this.pictureBox1.Size = new System.Drawing.Size(228, 216);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // BtnUsers
-            // 
-            this.BtnUsers.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnUsers.Location = new System.Drawing.Point(3, 494);
-            this.BtnUsers.Name = "BtnUsers";
-            this.BtnUsers.Size = new System.Drawing.Size(228, 42);
-            this.BtnUsers.TabIndex = 2;
-            this.BtnUsers.Text = "Users";
-            this.BtnUsers.UseVisualStyleBackColor = true;
-            this.BtnUsers.Click += new System.EventHandler(this.BtnUsers_Click);
-            // 
             // BtnProducts
             // 
             this.BtnProducts.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnProducts.Location = new System.Drawing.Point(3, 383);
+            this.BtnProducts.Location = new System.Drawing.Point(3, 363);
             this.BtnProducts.Name = "BtnProducts";
             this.BtnProducts.Size = new System.Drawing.Size(228, 42);
             this.BtnProducts.TabIndex = 4;
@@ -125,7 +106,7 @@ namespace FinalProject
             // BtnCategories
             // 
             this.BtnCategories.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnCategories.Location = new System.Drawing.Point(3, 436);
+            this.BtnCategories.Location = new System.Drawing.Point(3, 416);
             this.BtnCategories.Name = "BtnCategories";
             this.BtnCategories.Size = new System.Drawing.Size(228, 42);
             this.BtnCategories.TabIndex = 5;
@@ -133,16 +114,38 @@ namespace FinalProject
             this.BtnCategories.UseVisualStyleBackColor = true;
             this.BtnCategories.Click += new System.EventHandler(this.BtnCategories_Click);
             // 
+            // BtnUsers
+            // 
+            this.BtnUsers.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnUsers.Location = new System.Drawing.Point(3, 531);
+            this.BtnUsers.Name = "BtnUsers";
+            this.BtnUsers.Size = new System.Drawing.Size(228, 42);
+            this.BtnUsers.TabIndex = 2;
+            this.BtnUsers.Text = "Users";
+            this.BtnUsers.UseVisualStyleBackColor = true;
+            this.BtnUsers.Click += new System.EventHandler(this.BtnUsers_Click);
+            // 
             // BtnTransactions
             // 
             this.BtnTransactions.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnTransactions.Location = new System.Drawing.Point(3, 329);
+            this.BtnTransactions.Location = new System.Drawing.Point(3, 309);
             this.BtnTransactions.Name = "BtnTransactions";
             this.BtnTransactions.Size = new System.Drawing.Size(228, 42);
             this.BtnTransactions.TabIndex = 5;
             this.BtnTransactions.Text = "Transactions";
             this.BtnTransactions.UseVisualStyleBackColor = true;
             this.BtnTransactions.Click += new System.EventHandler(this.BtnCategories_Click);
+            // 
+            // BtnUserProfile
+            // 
+            this.BtnUserProfile.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnUserProfile.Location = new System.Drawing.Point(3, 252);
+            this.BtnUserProfile.Name = "BtnUserProfile";
+            this.BtnUserProfile.Size = new System.Drawing.Size(228, 42);
+            this.BtnUserProfile.TabIndex = 1;
+            this.BtnUserProfile.Text = "User Profile";
+            this.BtnUserProfile.UseVisualStyleBackColor = true;
+            this.BtnUserProfile.Click += new System.EventHandler(this.BtnAdminDashBoard_Click);
             // 
             // PnlAdminMain
             // 
@@ -151,6 +154,17 @@ namespace FinalProject
             this.PnlAdminMain.Name = "PnlAdminMain";
             this.PnlAdminMain.Size = new System.Drawing.Size(815, 664);
             this.PnlAdminMain.TabIndex = 2;
+            // 
+            // BtnContact
+            // 
+            this.BtnContact.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnContact.Location = new System.Drawing.Point(3, 474);
+            this.BtnContact.Name = "BtnContact";
+            this.BtnContact.Size = new System.Drawing.Size(228, 42);
+            this.BtnContact.TabIndex = 2;
+            this.BtnContact.Text = "Supplier and Customer";
+            this.BtnContact.UseVisualStyleBackColor = true;
+            this.BtnContact.Click += new System.EventHandler(this.BtnUsers_Click);
             // 
             // AdminControl
             // 
@@ -179,6 +193,7 @@ namespace FinalProject
         private System.Windows.Forms.Button BtnCategories;
         private System.Windows.Forms.Panel PnlAdminMain;
         private System.Windows.Forms.Button BtnTransactions;
+        private System.Windows.Forms.Button BtnContact;
     }
 }
 
