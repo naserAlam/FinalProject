@@ -273,6 +273,7 @@ namespace FinalProject
         }
         #endregion
 
+        #region Search User
         private void BtnSearch_Click(object sender, EventArgs e)
         {
             var searchWord = TbSearchWord.Text;
@@ -305,5 +306,6 @@ namespace FinalProject
             }
             
         }
+        #endregion
     }
 }

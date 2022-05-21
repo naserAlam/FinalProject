@@ -219,5 +219,40 @@ namespace FinalProject.Forms
             }
         }
         #endregion
+
+        #region Search Product
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+            var searchWord = TbSearchWord.Text;
+            if (!string.IsNullOrWhiteSpace(searchWord))
+            {
+                try
+                {
+                    if (connection.State == ConnectionState.Closed)
+                    {
+                        connection.Open();
+                    }
+                    string query = "SELECT FinalProjectDb.dbo.Products.Id, FinalProjectDb.dbo.Products.Name, Description, Price, Unit, FinalProjectDb.dbo.Categories.Name AS Category FROM FinalProjectDb.dbo.Products INNER JOIN FinalProjectDb.dbo.Categories ON FinalProjectDb.dbo.Products.CategoryId = FinalProjectDb.dbo.Categories.Id WHERE FinalProjectDb.dbo.Products.Name LIKE '%"+searchWord+ "%' OR FinalProjectDb.dbo.Categories.Name LIKE '%"+searchWord+"%'";
+                    dataAdapter = new SqlDataAdapter(query, connection);
+                    DataTable productTable = new DataTable();
+                    dataAdapter.Fill(productTable);
+
+                    DGVProductList.DataSource = productTable;
+
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Product table could not be loaded." + ex.Message);
+                }
+                finally
+                {
+                    if (connection.State == ConnectionState.Open)
+                        connection.Close();
+                }
+            }
+
+        }
+        #endregion
     }
 }
