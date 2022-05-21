@@ -176,7 +176,7 @@ namespace FinalProject
                 var password = Encrypt(TbPassword.Text);
                 var username = TbUsername.Text;
                 var email = TbEmail.Text;
-                var usertype = (int)CbUserType.SelectedValue;
+                var usertype = Convert.ToInt32(CbUserType.SelectedValue);
 
                 try
                 {

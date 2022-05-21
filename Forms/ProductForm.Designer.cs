@@ -76,7 +76,7 @@ namespace FinalProject.Forms
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.37234F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.62766F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
-            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
+            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254F));
             this.TlpUserFields.Controls.Add(this.LblProductName, 0, 0);
             this.TlpUserFields.Controls.Add(this.LblCategory, 2, 0);
             this.TlpUserFields.Controls.Add(this.LblPrice, 0, 1);
@@ -112,7 +112,7 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblCategory.AutoSize = true;
             this.LblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCategory.Location = new System.Drawing.Point(392, 0);
+            this.LblCategory.Location = new System.Drawing.Point(391, 0);
             this.LblCategory.Name = "LblCategory";
             this.LblCategory.Size = new System.Drawing.Size(142, 25);
             this.LblCategory.TabIndex = 0;
@@ -138,7 +138,7 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblUnit.AutoSize = true;
             this.LblUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUnit.Location = new System.Drawing.Point(392, 38);
+            this.LblUnit.Location = new System.Drawing.Point(391, 38);
             this.LblUnit.Name = "LblUnit";
             this.LblUnit.Size = new System.Drawing.Size(142, 25);
             this.LblUnit.TabIndex = 2;
@@ -151,7 +151,7 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TbProductName.Location = new System.Drawing.Point(140, 3);
             this.TbProductName.Name = "TbProductName";
-            this.TbProductName.Size = new System.Drawing.Size(246, 26);
+            this.TbProductName.Size = new System.Drawing.Size(245, 26);
             this.TbProductName.TabIndex = 5;
             // 
             // TbPrice
@@ -160,16 +160,16 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TbPrice.Location = new System.Drawing.Point(140, 41);
             this.TbPrice.Name = "TbPrice";
-            this.TbPrice.Size = new System.Drawing.Size(246, 26);
+            this.TbPrice.Size = new System.Drawing.Size(245, 26);
             this.TbPrice.TabIndex = 5;
             // 
             // TbUnit
             // 
             this.TbUnit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbUnit.Location = new System.Drawing.Point(540, 41);
+            this.TbUnit.Location = new System.Drawing.Point(539, 41);
             this.TbUnit.Name = "TbUnit";
-            this.TbUnit.Size = new System.Drawing.Size(248, 26);
+            this.TbUnit.Size = new System.Drawing.Size(249, 26);
             this.TbUnit.TabIndex = 5;
             // 
             // CbProductCategory
@@ -177,9 +177,9 @@ namespace FinalProject.Forms
             this.CbProductCategory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CbProductCategory.FormattingEnabled = true;
-            this.CbProductCategory.Location = new System.Drawing.Point(540, 3);
+            this.CbProductCategory.Location = new System.Drawing.Point(539, 3);
             this.CbProductCategory.Name = "CbProductCategory";
-            this.CbProductCategory.Size = new System.Drawing.Size(248, 28);
+            this.CbProductCategory.Size = new System.Drawing.Size(249, 28);
             this.CbProductCategory.TabIndex = 6;
             // 
             // tableLayoutPanel1
@@ -227,6 +227,7 @@ namespace FinalProject.Forms
             this.BtnDeleteProduct.TabIndex = 7;
             this.BtnDeleteProduct.Text = "Delete";
             this.BtnDeleteProduct.UseVisualStyleBackColor = true;
+            this.BtnDeleteProduct.Click += new System.EventHandler(this.BtnDeleteProduct_Click);
             // 
             // BtnUpdateProduct
             // 
@@ -237,6 +238,7 @@ namespace FinalProject.Forms
             this.BtnUpdateProduct.TabIndex = 6;
             this.BtnUpdateProduct.Text = "Update";
             this.BtnUpdateProduct.UseVisualStyleBackColor = true;
+            this.BtnUpdateProduct.Click += new System.EventHandler(this.BtnUpdateProduct_Click);
             // 
             // BtnSaveProduct
             // 
@@ -247,12 +249,14 @@ namespace FinalProject.Forms
             this.BtnSaveProduct.TabIndex = 5;
             this.BtnSaveProduct.Text = "Save";
             this.BtnSaveProduct.UseVisualStyleBackColor = true;
+            this.BtnSaveProduct.Click += new System.EventHandler(this.BtnSaveProduct_Click);
             // 
             // DGVProductList
             // 
             this.DGVProductList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.DGVProductList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVProductList.Location = new System.Drawing.Point(9, 239);
             this.DGVProductList.Name = "DGVProductList";
@@ -260,6 +264,7 @@ namespace FinalProject.Forms
             this.DGVProductList.RowTemplate.Height = 28;
             this.DGVProductList.Size = new System.Drawing.Size(791, 413);
             this.DGVProductList.TabIndex = 8;
+            this.DGVProductList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVProductList_CellDoubleClick);
             // 
             // LblSearch
             // 

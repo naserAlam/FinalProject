@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProject.Forms
 {
-    public partial class AdminProfile : Form
+    public partial class UserProfile : Form
     {
-        public AdminProfile()
+        public UserProfile()
         {
             InitializeComponent();
         }

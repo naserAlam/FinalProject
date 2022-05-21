@@ -1,7 +1,7 @@
 ﻿
 namespace FinalProject.Forms
 {
-    partial class AdminProfile
+    partial class UserProfile
     {
         /// <summary>
         /// Required designer variable.
@@ -32,14 +32,14 @@ namespace FinalProject.Forms
             this.BtnUpdateUser = new System.Windows.Forms.Button();
             this.LblUserTitle = new System.Windows.Forms.Label();
             this.TlpUserFields = new System.Windows.Forms.TableLayoutPanel();
+            this.TbEmail = new System.Windows.Forms.TextBox();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.TbFirstName = new System.Windows.Forms.TextBox();
             this.LblFirstName = new System.Windows.Forms.Label();
             this.LblContantNo = new System.Windows.Forms.Label();
-            this.TbFirstName = new System.Windows.Forms.TextBox();
-            this.TbContactNo = new System.Windows.Forms.TextBox();
-            this.LblEmail = new System.Windows.Forms.Label();
-            this.TbLastName = new System.Windows.Forms.TextBox();
-            this.TbEmail = new System.Windows.Forms.TextBox();
             this.LblLastName = new System.Windows.Forms.Label();
+            this.TbContactNo = new System.Windows.Forms.TextBox();
+            this.TbLastName = new System.Windows.Forms.TextBox();
             this.TlpUserFields.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,9 +62,9 @@ namespace FinalProject.Forms
             this.LblUserTitle.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUserTitle.Location = new System.Drawing.Point(333, 72);
             this.LblUserTitle.Name = "LblUserTitle";
-            this.LblUserTitle.Size = new System.Drawing.Size(147, 42);
+            this.LblUserTitle.Size = new System.Drawing.Size(186, 42);
             this.LblUserTitle.TabIndex = 14;
-            this.LblUserTitle.Text = "USERS";
+            this.LblUserTitle.Text = "PROFILE";
             // 
             // TlpUserFields
             // 
@@ -92,6 +92,37 @@ namespace FinalProject.Forms
             this.TlpUserFields.Size = new System.Drawing.Size(685, 164);
             this.TlpUserFields.TabIndex = 18;
             // 
+            // TbEmail
+            // 
+            this.TbEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TbEmail.Location = new System.Drawing.Point(245, 126);
+            this.TbEmail.Name = "TbEmail";
+            this.TbEmail.Size = new System.Drawing.Size(437, 26);
+            this.TbEmail.TabIndex = 22;
+            // 
+            // LblEmail
+            // 
+            this.LblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.Location = new System.Drawing.Point(3, 123);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(236, 25);
+            this.LblEmail.TabIndex = 20;
+            this.LblEmail.Text = "Email";
+            this.LblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TbFirstName
+            // 
+            this.TbFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TbFirstName.Location = new System.Drawing.Point(245, 3);
+            this.TbFirstName.Name = "TbFirstName";
+            this.TbFirstName.Size = new System.Drawing.Size(437, 26);
+            this.TbFirstName.TabIndex = 5;
+            // 
             // LblFirstName
             // 
             this.LblFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -118,55 +149,6 @@ namespace FinalProject.Forms
             this.LblContantNo.Text = "Contact No.";
             this.LblContantNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TbFirstName
-            // 
-            this.TbFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbFirstName.Location = new System.Drawing.Point(245, 3);
-            this.TbFirstName.Name = "TbFirstName";
-            this.TbFirstName.Size = new System.Drawing.Size(437, 26);
-            this.TbFirstName.TabIndex = 5;
-            // 
-            // TbContactNo
-            // 
-            this.TbContactNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbContactNo.Location = new System.Drawing.Point(245, 82);
-            this.TbContactNo.Name = "TbContactNo";
-            this.TbContactNo.Size = new System.Drawing.Size(437, 26);
-            this.TbContactNo.TabIndex = 5;
-            // 
-            // LblEmail
-            // 
-            this.LblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblEmail.AutoSize = true;
-            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.Location = new System.Drawing.Point(3, 123);
-            this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(236, 25);
-            this.LblEmail.TabIndex = 20;
-            this.LblEmail.Text = "Email";
-            this.LblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TbLastName
-            // 
-            this.TbLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbLastName.Location = new System.Drawing.Point(245, 38);
-            this.TbLastName.Name = "TbLastName";
-            this.TbLastName.Size = new System.Drawing.Size(437, 26);
-            this.TbLastName.TabIndex = 21;
-            // 
-            // TbEmail
-            // 
-            this.TbEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbEmail.Location = new System.Drawing.Point(245, 126);
-            this.TbEmail.Name = "TbEmail";
-            this.TbEmail.Size = new System.Drawing.Size(437, 26);
-            this.TbEmail.TabIndex = 22;
-            // 
             // LblLastName
             // 
             this.LblLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -180,7 +162,25 @@ namespace FinalProject.Forms
             this.LblLastName.Text = "Last Name";
             this.LblLastName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // AdminProfile
+            // TbContactNo
+            // 
+            this.TbContactNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TbContactNo.Location = new System.Drawing.Point(245, 82);
+            this.TbContactNo.Name = "TbContactNo";
+            this.TbContactNo.Size = new System.Drawing.Size(437, 26);
+            this.TbContactNo.TabIndex = 5;
+            // 
+            // TbLastName
+            // 
+            this.TbLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TbLastName.Location = new System.Drawing.Point(245, 38);
+            this.TbLastName.Name = "TbLastName";
+            this.TbLastName.Size = new System.Drawing.Size(437, 26);
+            this.TbLastName.TabIndex = 21;
+            // 
+            // UserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,7 +190,7 @@ namespace FinalProject.Forms
             this.Controls.Add(this.BtnUpdateUser);
             this.Controls.Add(this.LblUserTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AdminProfile";
+            this.Name = "UserProfile";
             this.Text = "AdminProfile";
             this.TlpUserFields.ResumeLayout(false);
             this.TlpUserFields.PerformLayout();

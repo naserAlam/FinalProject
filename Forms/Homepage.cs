@@ -41,7 +41,7 @@ namespace FinalProject
 
         private void BtnAdminDashBoard_Click(object sender, EventArgs e)
         {
-            LoadForm(new AdminProfile());
+            LoadForm(new UserProfile());
         }
 
         private void BtnUsers_Click(object sender, EventArgs e)
