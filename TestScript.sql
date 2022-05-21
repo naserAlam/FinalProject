@@ -14,3 +14,8 @@ WHERE FinalProjectDb.dbo.Products.Name LIKE '%coca%' OR FinalProjectDb.dbo.Categ
 
 SELECT * FROM FinalProjectDb.dbo.Categories
 WHERE FinalProjectDb.dbo.Categories.Name LIKE '%bev%';
+
+SELECT * FROM FinalProjectDb.dbo.DealerCustomers;
+
+SELECT * FROM FinalProjectDb.dbo.DealerCustomers 
+WHERE FinalProjectDb.dbo.DealerCustomers.Name LIKE '' OR FinalProjectDb.dbo.DealerCustomers.ContactNo LIKE '' OR FinalProjectDb.dbo.DealerCustomers.ContactType LIKE '' OR FinalProjectDb.dbo.DealerCustomers.Email Like '';

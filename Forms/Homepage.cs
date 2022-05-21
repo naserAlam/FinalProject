@@ -51,5 +51,14 @@ namespace FinalProject
         {
             LoadForm(new CategoriesForm());
         }
+        private void BtnTransactions_Click(object sender, EventArgs e)
+        {
+            LoadForm(new TrasactionsForm());
+        }
+
+        private void BtnUsersForm_Click(object sender, EventArgs e)
+        {
+            LoadForm(new UsersForm());
+        }
     }
 }
