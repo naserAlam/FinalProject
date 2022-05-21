@@ -36,8 +36,8 @@ namespace FinalProject
             this.BtnUsers = new System.Windows.Forms.Button();
             this.BtnProducts = new System.Windows.Forms.Button();
             this.BtnCategories = new System.Windows.Forms.Button();
-            this.PnlAdminMain = new System.Windows.Forms.Panel();
             this.BtnTransactions = new System.Windows.Forms.Button();
+            this.PnlAdminMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.TlpAdminNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,9 +70,9 @@ namespace FinalProject
             this.TlpAdminNavigation.RowCount = 8;
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.18033F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.81967F));
-            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
             this.TlpAdminNavigation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 102F));
@@ -103,7 +103,7 @@ namespace FinalProject
             // BtnUsers
             // 
             this.BtnUsers.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnUsers.Location = new System.Drawing.Point(3, 330);
+            this.BtnUsers.Location = new System.Drawing.Point(3, 329);
             this.BtnUsers.Name = "BtnUsers";
             this.BtnUsers.Size = new System.Drawing.Size(228, 42);
             this.BtnUsers.TabIndex = 2;
@@ -114,7 +114,7 @@ namespace FinalProject
             // BtnProducts
             // 
             this.BtnProducts.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnProducts.Location = new System.Drawing.Point(3, 384);
+            this.BtnProducts.Location = new System.Drawing.Point(3, 383);
             this.BtnProducts.Name = "BtnProducts";
             this.BtnProducts.Size = new System.Drawing.Size(228, 42);
             this.BtnProducts.TabIndex = 4;
@@ -133,14 +133,6 @@ namespace FinalProject
             this.BtnCategories.UseVisualStyleBackColor = true;
             this.BtnCategories.Click += new System.EventHandler(this.BtnCategories_Click);
             // 
-            // PnlAdminMain
-            // 
-            this.PnlAdminMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlAdminMain.Location = new System.Drawing.Point(243, 0);
-            this.PnlAdminMain.Name = "PnlAdminMain";
-            this.PnlAdminMain.Size = new System.Drawing.Size(815, 664);
-            this.PnlAdminMain.TabIndex = 2;
-            // 
             // BtnTransactions
             // 
             this.BtnTransactions.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -151,6 +143,14 @@ namespace FinalProject
             this.BtnTransactions.Text = "Transactions";
             this.BtnTransactions.UseVisualStyleBackColor = true;
             this.BtnTransactions.Click += new System.EventHandler(this.BtnCategories_Click);
+            // 
+            // PnlAdminMain
+            // 
+            this.PnlAdminMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlAdminMain.Location = new System.Drawing.Point(243, 0);
+            this.PnlAdminMain.Name = "PnlAdminMain";
+            this.PnlAdminMain.Size = new System.Drawing.Size(815, 664);
+            this.PnlAdminMain.TabIndex = 2;
             // 
             // AdminControl
             // 

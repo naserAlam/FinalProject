@@ -32,13 +32,13 @@ namespace FinalProject.Forms
             this.LblCategoryTitle = new System.Windows.Forms.Label();
             this.TlpUserFields = new System.Windows.Forms.TableLayoutPanel();
             this.LblCategoryName = new System.Windows.Forms.Label();
+            this.TbCategoryName = new System.Windows.Forms.TextBox();
             this.TbSearchWord = new System.Windows.Forms.TextBox();
             this.BtnDeleteCategory = new System.Windows.Forms.Button();
             this.BtnUpdateCategory = new System.Windows.Forms.Button();
             this.BtnSaveCategory = new System.Windows.Forms.Button();
             this.DGVCategoryList = new System.Windows.Forms.DataGridView();
             this.LblSearch = new System.Windows.Forms.Label();
-            this.TbCategoryName = new System.Windows.Forms.TextBox();
             this.BtnSearch = new System.Windows.Forms.Button();
             this.TlpUserFields.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVCategoryList)).BeginInit();
@@ -66,14 +66,14 @@ namespace FinalProject.Forms
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.37234F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.62766F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
-            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
+            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254F));
             this.TlpUserFields.Controls.Add(this.LblCategoryName, 0, 0);
             this.TlpUserFields.Controls.Add(this.TbCategoryName, 1, 0);
             this.TlpUserFields.Location = new System.Drawing.Point(12, 54);
             this.TlpUserFields.Name = "TlpUserFields";
             this.TlpUserFields.RowCount = 1;
             this.TlpUserFields.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TlpUserFields.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TlpUserFields.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.TlpUserFields.Size = new System.Drawing.Size(791, 38);
             this.TlpUserFields.TabIndex = 3;
             // 
@@ -89,6 +89,15 @@ namespace FinalProject.Forms
             this.LblCategoryName.TabIndex = 0;
             this.LblCategoryName.Text = "Category";
             this.LblCategoryName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TbCategoryName
+            // 
+            this.TbCategoryName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TbCategoryName.Location = new System.Drawing.Point(140, 3);
+            this.TbCategoryName.Name = "TbCategoryName";
+            this.TbCategoryName.Size = new System.Drawing.Size(245, 26);
+            this.TbCategoryName.TabIndex = 5;
             // 
             // TbSearchWord
             // 
@@ -106,6 +115,7 @@ namespace FinalProject.Forms
             this.BtnDeleteCategory.TabIndex = 10;
             this.BtnDeleteCategory.Text = "Delete";
             this.BtnDeleteCategory.UseVisualStyleBackColor = true;
+            this.BtnDeleteCategory.Click += new System.EventHandler(this.BtnDeleteCategory_Click);
             // 
             // BtnUpdateCategory
             // 
@@ -116,6 +126,7 @@ namespace FinalProject.Forms
             this.BtnUpdateCategory.TabIndex = 9;
             this.BtnUpdateCategory.Text = "Update";
             this.BtnUpdateCategory.UseVisualStyleBackColor = true;
+            this.BtnUpdateCategory.Click += new System.EventHandler(this.BtnUpdateCategory_Click);
             // 
             // BtnSaveCategory
             // 
@@ -126,12 +137,14 @@ namespace FinalProject.Forms
             this.BtnSaveCategory.TabIndex = 8;
             this.BtnSaveCategory.Text = "Save";
             this.BtnSaveCategory.UseVisualStyleBackColor = true;
+            this.BtnSaveCategory.Click += new System.EventHandler(this.BtnSaveCategory_Click);
             // 
             // DGVCategoryList
             // 
             this.DGVCategoryList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.DGVCategoryList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVCategoryList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVCategoryList.Location = new System.Drawing.Point(12, 161);
             this.DGVCategoryList.Name = "DGVCategoryList";
@@ -139,6 +152,7 @@ namespace FinalProject.Forms
             this.DGVCategoryList.RowTemplate.Height = 28;
             this.DGVCategoryList.Size = new System.Drawing.Size(791, 491);
             this.DGVCategoryList.TabIndex = 11;
+            this.DGVCategoryList.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGVCategoryList_CellMouseDoubleClick);
             // 
             // LblSearch
             // 
@@ -153,15 +167,6 @@ namespace FinalProject.Forms
             this.LblSearch.Text = "Search";
             this.LblSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TbCategoryName
-            // 
-            this.TbCategoryName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbCategoryName.Location = new System.Drawing.Point(140, 3);
-            this.TbCategoryName.Name = "TbCategoryName";
-            this.TbCategoryName.Size = new System.Drawing.Size(246, 26);
-            this.TbCategoryName.TabIndex = 5;
-            // 
             // BtnSearch
             // 
             this.BtnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,6 +176,7 @@ namespace FinalProject.Forms
             this.BtnSearch.TabIndex = 10;
             this.BtnSearch.Text = "Search";
             this.BtnSearch.UseVisualStyleBackColor = true;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // CategoriesForm
             // 
