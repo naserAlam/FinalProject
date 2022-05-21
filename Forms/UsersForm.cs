@@ -272,5 +272,38 @@ namespace FinalProject
             }
         }
         #endregion
+
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+            var searchWord = TbSearchWord.Text;
+
+            if(!string.IsNullOrWhiteSpace(searchWord))
+            {
+                try
+                {
+                    connection.Open();
+                    string query = "SELECT FinalProjectDb.dbo.Users.Id, FinalProjectDb.dbo.Users.Username, FinalProjectDb.dbo.Users.FirstName, FinalProjectDb.dbo.Users.LastName, FinalProjectDb.dbo.Users.Email, FinalProjectDb.dbo.UserTypes.Name AS Role FROM FinalProjectDb.dbo.Users INNER JOIN FinalProjectDb.dbo.UserTypes ON FinalProjectDb.dbo.Users.UserTypeId = FinalProjectDb.dbo.UserTypes.Id WHERE FinalProjectDb.dbo.Users.Username LIKE '%"+searchWord+ "%' OR FinalProjectDb.dbo.UserTypes.Name LIKE '%" + searchWord + "%'";
+                    dataAdapter = new SqlDataAdapter(query, connection);
+                    DataTable userTable = new DataTable();
+                    dataAdapter.Fill(userTable);
+
+                    DGVUserList.DataSource = userTable;
+
+                    connection.Close();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    if (connection.State == ConnectionState.Open)
+                        connection.Close();
+                }
+            }
+            
+        }
     }
 }
