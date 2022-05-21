@@ -59,12 +59,12 @@ namespace FinalProject
             this.TlpAdminNavigation.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.TlpAdminNavigation.ColumnCount = 1;
             this.TlpAdminNavigation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TlpAdminNavigation.Controls.Add(this.BtnUserProfile, 0, 2);
             this.TlpAdminNavigation.Controls.Add(this.pictureBox1, 0, 0);
-            this.TlpAdminNavigation.Controls.Add(this.BtnUsers, 0, 3);
             this.TlpAdminNavigation.Controls.Add(this.BtnProducts, 0, 4);
             this.TlpAdminNavigation.Controls.Add(this.BtnCategories, 0, 5);
-            this.TlpAdminNavigation.Controls.Add(this.BtnTransactions, 0, 6);
+            this.TlpAdminNavigation.Controls.Add(this.BtnUsers, 0, 6);
+            this.TlpAdminNavigation.Controls.Add(this.BtnTransactions, 0, 3);
+            this.TlpAdminNavigation.Controls.Add(this.BtnUserProfile, 0, 2);
             this.TlpAdminNavigation.Location = new System.Drawing.Point(6, 3);
             this.TlpAdminNavigation.Name = "TlpAdminNavigation";
             this.TlpAdminNavigation.RowCount = 8;
@@ -103,7 +103,7 @@ namespace FinalProject
             // BtnUsers
             // 
             this.BtnUsers.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnUsers.Location = new System.Drawing.Point(3, 329);
+            this.BtnUsers.Location = new System.Drawing.Point(3, 494);
             this.BtnUsers.Name = "BtnUsers";
             this.BtnUsers.Size = new System.Drawing.Size(228, 42);
             this.BtnUsers.TabIndex = 2;
@@ -136,7 +136,7 @@ namespace FinalProject
             // BtnTransactions
             // 
             this.BtnTransactions.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnTransactions.Location = new System.Drawing.Point(3, 494);
+            this.BtnTransactions.Location = new System.Drawing.Point(3, 329);
             this.BtnTransactions.Name = "BtnTransactions";
             this.BtnTransactions.Size = new System.Drawing.Size(228, 42);
             this.BtnTransactions.TabIndex = 5;
