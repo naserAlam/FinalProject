@@ -57,29 +57,29 @@
     <Compile Include="Forms\Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\InventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InventoryForm.Designer.cs">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SupplierCustomerForm.cs">
+    <Compile Include="Forms\SupplierForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SupplierCustomerForm.Designer.cs">
-      <DependentUpon>SupplierCustomerForm.cs</DependentUpon>
+    <Compile Include="Forms\SupplierForm.Designer.cs">
+      <DependentUpon>SupplierForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TrasactionsForm.cs">
+    <Compile Include="Forms\SalesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TrasactionsForm.Designer.cs">
-      <DependentUpon>TrasactionsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\UserProfile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\UserProfile.Designer.cs">
-      <DependentUpon>UserProfile.cs</DependentUpon>
+    <Compile Include="Forms\SalesForm.Designer.cs">
+      <DependentUpon>SalesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CategoriesForm.cs">
       <SubType>Form</SubType>
@@ -104,17 +104,17 @@
     <EmbeddedResource Include="Forms\Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InventoryForm.resx">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SupplierCustomerForm.resx">
-      <DependentUpon>SupplierCustomerForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SupplierForm.resx">
+      <DependentUpon>SupplierForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TrasactionsForm.resx">
-      <DependentUpon>TrasactionsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserProfile.resx">
-      <DependentUpon>UserProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SalesForm.resx">
+      <DependentUpon>SalesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CategoriesForm.resx">
       <DependentUpon>CategoriesForm.cs</DependentUpon>

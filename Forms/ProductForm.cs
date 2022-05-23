@@ -122,7 +122,7 @@ namespace FinalProject.Forms
             if (isValid())
             {
                 var productName = TbProductName.Text;
-                var price = Convert.ToDecimal(TbPrice.Text);
+                var price = Convert.ToInt32(TbPrice.Text);
                 var unit = Convert.ToInt32(TbUnit.Text);
                 var category = Convert.ToInt32(CbProductCategory.SelectedValue);
                 var description = TbDescription.Text;
@@ -140,9 +140,9 @@ namespace FinalProject.Forms
                     DisplayData();
                     ClearForm();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Product Could not be created.");
+                    MessageBox.Show("Product Could not be created.\r\n" + ex.Message);
                 }
                 finally
                 {

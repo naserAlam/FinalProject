@@ -6,14 +6,14 @@ using System.Windows.Forms;
 
 namespace FinalProject.Forms
 {
-    public partial class SupplierCustomerForm : Form
+    public partial class SupplierForm : Form
     {
         private SqlConnection connection;
         private SqlCommand sqlCommand;
         private SqlDataAdapter dataAdapter;
         int contactId;
 
-        public SupplierCustomerForm()
+        public SupplierForm()
         {
             InitializeComponent();
             connection = new SqlConnection(DbConnection.ConnectionString);

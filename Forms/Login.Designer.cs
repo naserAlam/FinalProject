@@ -81,14 +81,14 @@ namespace FinalProject.Forms
             // 
             // TbUsername
             // 
-            this.TbUsername.Location = new System.Drawing.Point(145, 3);
+            this.TbUsername.Location = new System.Drawing.Point(144, 3);
             this.TbUsername.Name = "TbUsername";
             this.TbUsername.Size = new System.Drawing.Size(286, 26);
             this.TbUsername.TabIndex = 5;
             // 
             // TbPassword
             // 
-            this.TbPassword.Location = new System.Drawing.Point(145, 53);
+            this.TbPassword.Location = new System.Drawing.Point(144, 53);
             this.TbPassword.Name = "TbPassword";
             this.TbPassword.PasswordChar = '*';
             this.TbPassword.Size = new System.Drawing.Size(286, 26);
@@ -114,6 +114,7 @@ namespace FinalProject.Forms
             this.BtnLogIn.TabIndex = 5;
             this.BtnLogIn.Text = "Log In";
             this.BtnLogIn.UseVisualStyleBackColor = false;
+            this.BtnLogIn.Click += new System.EventHandler(this.BtnLogIn_Click);
             // 
             // Login
             // 
@@ -124,6 +125,7 @@ namespace FinalProject.Forms
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

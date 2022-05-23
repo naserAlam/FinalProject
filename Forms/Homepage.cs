@@ -11,6 +11,24 @@ namespace FinalProject
             InitializeComponent();
         }
 
+        public AdminControl(string userrole)
+        {
+            InitializeComponent();
+            if (userrole == "salesoperator")
+            {
+                BtnCategories.Hide();
+                BtnProducts.Hide();
+                BtnInventory.Hide();
+                BtnContact.Hide();
+                BtnUsersForm.Hide();
+            }
+            else if (userrole == "manager")
+            {
+                BtnContact.Hide();
+                BtnUsersForm.Hide();
+            }
+        }
+
         /** Load Form Method
          * Takes a windows form as parameter
          * Checks if any other form is open in the panel
@@ -32,14 +50,9 @@ namespace FinalProject
             form.Show();
         }
 
-        private void BtnAdminDashBoard_Click(object sender, EventArgs e)
-        {
-            LoadForm(new UserProfile());
-        }
-
         private void BtnUsers_Click(object sender, EventArgs e)
         {
-            LoadForm(new SupplierCustomerForm());
+            LoadForm(new SupplierForm());
         }
 
         private void BtnProducts_Click(object sender, EventArgs e)
@@ -53,12 +66,29 @@ namespace FinalProject
         }
         private void BtnTransactions_Click(object sender, EventArgs e)
         {
-            LoadForm(new TrasactionsForm());
+            LoadForm(new SalesForm());
         }
 
         private void BtnUsersForm_Click(object sender, EventArgs e)
         {
             LoadForm(new UsersForm());
+        }
+
+        private void BtnInventory_Click(object sender, EventArgs e)
+        {
+            LoadForm(new InventoryForm());
+        }
+
+        private void BtnLogOut_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            Close();
+        }
+
+        private void AdminControl_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

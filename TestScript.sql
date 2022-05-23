@@ -19,3 +19,9 @@ SELECT * FROM FinalProjectDb.dbo.DealerCustomers;
 
 SELECT * FROM FinalProjectDb.dbo.DealerCustomers 
 WHERE FinalProjectDb.dbo.DealerCustomers.Name LIKE '' OR FinalProjectDb.dbo.DealerCustomers.ContactNo LIKE '' OR FinalProjectDb.dbo.DealerCustomers.ContactType LIKE '' OR FinalProjectDb.dbo.DealerCustomers.Email Like '';
+
+SELECT * FROM FinalProjectDb.dbo.Products WHERE FinalProjectDb.dbo.Products.Name = 'Dove Mini Pack';
+
+INSERT INTO FinalProjectDb.dbo.Products VALUES('lays_small','Lays Onion Small Size', 15, 30,1);
+
+SELECT * FROM FinalProjectDb.dbo.BillDetails;

@@ -1,7 +1,7 @@
 ﻿
 namespace FinalProject.Forms
 {
-    partial class SupplierCustomerForm
+    partial class SupplierForm
     {
         /// <summary>
         /// Required designer variable.
@@ -57,11 +57,11 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSupplierCustomerTitle.AutoSize = true;
             this.lblSupplierCustomerTitle.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSupplierCustomerTitle.Location = new System.Drawing.Point(169, 9);
+            this.lblSupplierCustomerTitle.Location = new System.Drawing.Point(338, 9);
             this.lblSupplierCustomerTitle.Name = "lblSupplierCustomerTitle";
-            this.lblSupplierCustomerTitle.Size = new System.Drawing.Size(499, 42);
+            this.lblSupplierCustomerTitle.Size = new System.Drawing.Size(175, 42);
             this.lblSupplierCustomerTitle.TabIndex = 14;
-            this.lblSupplierCustomerTitle.Text = "DEALER AND CUSTOMER";
+            this.lblSupplierCustomerTitle.Text = "DEALER";
             // 
             // TlpUserFields
             // 
@@ -71,7 +71,7 @@ namespace FinalProject.Forms
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.37234F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.62766F));
             this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
-            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 261F));
+            this.TlpUserFields.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 262F));
             this.TlpUserFields.Controls.Add(this.CbContactType, 3, 0);
             this.TlpUserFields.Controls.Add(this.LblContactType, 2, 0);
             this.TlpUserFields.Controls.Add(this.TbContactEmail, 3, 1);
@@ -97,9 +97,9 @@ namespace FinalProject.Forms
             this.CbContactType.Items.AddRange(new object[] {
             "Dealer",
             "Customer"});
-            this.CbContactType.Location = new System.Drawing.Point(532, 3);
+            this.CbContactType.Location = new System.Drawing.Point(531, 3);
             this.CbContactType.Name = "CbContactType";
-            this.CbContactType.Size = new System.Drawing.Size(256, 28);
+            this.CbContactType.Size = new System.Drawing.Size(257, 28);
             this.CbContactType.TabIndex = 6;
             // 
             // LblContactType
@@ -108,7 +108,7 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblContactType.AutoSize = true;
             this.LblContactType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblContactType.Location = new System.Drawing.Point(384, 0);
+            this.LblContactType.Location = new System.Drawing.Point(383, 0);
             this.LblContactType.Name = "LblContactType";
             this.LblContactType.Size = new System.Drawing.Size(142, 25);
             this.LblContactType.TabIndex = 3;
@@ -119,9 +119,9 @@ namespace FinalProject.Forms
             // 
             this.TbContactEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbContactEmail.Location = new System.Drawing.Point(532, 43);
+            this.TbContactEmail.Location = new System.Drawing.Point(531, 43);
             this.TbContactEmail.Name = "TbContactEmail";
-            this.TbContactEmail.Size = new System.Drawing.Size(256, 26);
+            this.TbContactEmail.Size = new System.Drawing.Size(257, 26);
             this.TbContactEmail.TabIndex = 5;
             // 
             // LblContactEmail
@@ -130,7 +130,7 @@ namespace FinalProject.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblContactEmail.AutoSize = true;
             this.LblContactEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblContactEmail.Location = new System.Drawing.Point(384, 40);
+            this.LblContactEmail.Location = new System.Drawing.Point(383, 40);
             this.LblContactEmail.Name = "LblContactEmail";
             this.LblContactEmail.Size = new System.Drawing.Size(142, 25);
             this.LblContactEmail.TabIndex = 2;
@@ -145,7 +145,7 @@ namespace FinalProject.Forms
             this.LblContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblContactNo.Location = new System.Drawing.Point(3, 40);
             this.LblContactNo.Name = "LblContactNo";
-            this.LblContactNo.Size = new System.Drawing.Size(129, 25);
+            this.LblContactNo.Size = new System.Drawing.Size(128, 25);
             this.LblContactNo.TabIndex = 0;
             this.LblContactNo.Text = "Contact No.";
             this.LblContactNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -158,7 +158,7 @@ namespace FinalProject.Forms
             this.LblContactName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblContactName.Location = new System.Drawing.Point(3, 0);
             this.LblContactName.Name = "LblContactName";
-            this.LblContactName.Size = new System.Drawing.Size(129, 25);
+            this.LblContactName.Size = new System.Drawing.Size(128, 25);
             this.LblContactName.TabIndex = 4;
             this.LblContactName.Text = "Name";
             this.LblContactName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,7 +167,7 @@ namespace FinalProject.Forms
             // 
             this.TbContactNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbContactNo.Location = new System.Drawing.Point(138, 43);
+            this.TbContactNo.Location = new System.Drawing.Point(137, 43);
             this.TbContactNo.Name = "TbContactNo";
             this.TbContactNo.Size = new System.Drawing.Size(240, 26);
             this.TbContactNo.TabIndex = 5;
@@ -176,7 +176,7 @@ namespace FinalProject.Forms
             // 
             this.TbContactName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TbContactName.Location = new System.Drawing.Point(138, 3);
+            this.TbContactName.Location = new System.Drawing.Point(137, 3);
             this.TbContactName.Name = "TbContactName";
             this.TbContactName.Size = new System.Drawing.Size(240, 26);
             this.TbContactName.TabIndex = 5;
