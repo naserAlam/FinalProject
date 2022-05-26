@@ -188,7 +188,6 @@ namespace FinalProject
             this.Name = "AdminControl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Controls";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminControl_FormClosing);
             this.panel1.ResumeLayout(false);
             this.TlpAdminNavigation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

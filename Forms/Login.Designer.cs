@@ -108,7 +108,7 @@ namespace FinalProject.Forms
             // 
             this.BtnLogIn.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BtnLogIn.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLogIn.Location = new System.Drawing.Point(168, 457);
+            this.BtnLogIn.Location = new System.Drawing.Point(179, 456);
             this.BtnLogIn.Name = "BtnLogIn";
             this.BtnLogIn.Size = new System.Drawing.Size(125, 50);
             this.BtnLogIn.TabIndex = 5;
@@ -127,6 +127,7 @@ namespace FinalProject.Forms
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

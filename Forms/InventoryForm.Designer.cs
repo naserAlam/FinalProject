@@ -39,8 +39,6 @@ namespace FinalProject.Forms
             this.TbProductInventory = new System.Windows.Forms.TextBox();
             this.LblQuantity = new System.Windows.Forms.Label();
             this.TbQuantity = new System.Windows.Forms.TextBox();
-            this.LblDate = new System.Windows.Forms.Label();
-            this.DtpBillDate = new System.Windows.Forms.DateTimePicker();
             this.BtnSearchProduct = new System.Windows.Forms.Button();
             this.BtnAddProduct = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -81,8 +79,6 @@ namespace FinalProject.Forms
             this.tableLayoutPanel1.Controls.Add(this.TbProductInventory, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.LblQuantity, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.TbQuantity, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.LblDate, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.DtpBillDate, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.BtnSearchProduct, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.BtnAddProduct, 3, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 82);
@@ -183,26 +179,6 @@ namespace FinalProject.Forms
             this.TbQuantity.Size = new System.Drawing.Size(261, 26);
             this.TbQuantity.TabIndex = 5;
             // 
-            // LblDate
-            // 
-            this.LblDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblDate.AutoSize = true;
-            this.LblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDate.Location = new System.Drawing.Point(3, 76);
-            this.LblDate.Name = "LblDate";
-            this.LblDate.Size = new System.Drawing.Size(127, 25);
-            this.LblDate.TabIndex = 9;
-            this.LblDate.Text = " Date";
-            this.LblDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // DtpBillDate
-            // 
-            this.DtpBillDate.Location = new System.Drawing.Point(136, 79);
-            this.DtpBillDate.Name = "DtpBillDate";
-            this.DtpBillDate.Size = new System.Drawing.Size(237, 26);
-            this.DtpBillDate.TabIndex = 10;
-            // 
             // BtnSearchProduct
             // 
             this.BtnSearchProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -296,8 +272,6 @@ namespace FinalProject.Forms
         private System.Windows.Forms.TextBox TbProductInventory;
         private System.Windows.Forms.Label LblQuantity;
         private System.Windows.Forms.TextBox TbQuantity;
-        private System.Windows.Forms.Label LblDate;
-        private System.Windows.Forms.DateTimePicker DtpBillDate;
         private System.Windows.Forms.Button BtnSearchProduct;
         private System.Windows.Forms.Button BtnAddProduct;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;

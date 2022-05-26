@@ -42,7 +42,7 @@ namespace FinalProject.Forms
             var username = TbUsername.Text;
             var rawpassword = TbPassword.Text;
 
-            if(string.IsNullOrWhiteSpace(username) && string.IsNullOrWhiteSpace(rawpassword))
+            if(string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(rawpassword))
             {
                 MessageBox.Show("Input valid credentials");
             }
@@ -73,6 +73,11 @@ namespace FinalProject.Forms
             }
 
 
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

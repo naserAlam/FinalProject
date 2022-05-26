@@ -85,10 +85,5 @@ namespace FinalProject
             login.Show();
             Close();
         }
-
-        private void AdminControl_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }
