@@ -152,7 +152,7 @@ namespace FinalProject.Forms
                 {
                     var bilid = row.Field<int>(0);
 
-                    string query_o = "INSERT INTO FinalProjectDb.dbo.BillDetails VALUES('" + grandTotal + "','" + paidAmount + "','" + returnAmount + "','" + bilid + "')";
+                    string query_o = "INSERT INTO FinalProjectDb.dbo.Bills VALUES('" + grandTotal + "','" + paidAmount + "','" + returnAmount + "','" + bilid + "')";
                     dataAdapter = new SqlDataAdapter(query_o, connection);
                     sqlCommand.ExecuteNonQuery();
                 }

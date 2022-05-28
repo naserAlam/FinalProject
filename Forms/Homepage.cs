@@ -19,12 +19,10 @@ namespace FinalProject
                 BtnCategories.Hide();
                 BtnProducts.Hide();
                 BtnInventory.Hide();
-                BtnContact.Hide();
                 BtnUsersForm.Hide();
             }
             else if (userrole == "manager")
             {
-                BtnContact.Hide();
                 BtnUsersForm.Hide();
             }
         }
@@ -50,10 +48,7 @@ namespace FinalProject
             form.Show();
         }
 
-        private void BtnUsers_Click(object sender, EventArgs e)
-        {
-            LoadForm(new SupplierForm());
-        }
+        
 
         private void BtnProducts_Click(object sender, EventArgs e)
         {

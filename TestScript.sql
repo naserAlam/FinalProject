@@ -25,3 +25,7 @@ SELECT * FROM FinalProjectDb.dbo.Products WHERE FinalProjectDb.dbo.Products.Name
 INSERT INTO FinalProjectDb.dbo.Products VALUES('lays_small','Lays Onion Small Size', 15, 30,1);
 
 SELECT * FROM FinalProjectDb.dbo.BillDetails;
+
+INSERT INTO FinalProjectDb.dbo.BillDetails VALUES(1,'05-05-2022',10);
+
+INSERT INTO FinalProjectDb.dbo.Bills VALUES(120,200,80,1);

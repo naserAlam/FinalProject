@@ -38,7 +38,6 @@ namespace FinalProject
             this.BtnTransactions = new System.Windows.Forms.Button();
             this.BtnProducts = new System.Windows.Forms.Button();
             this.BtnCategories = new System.Windows.Forms.Button();
-            this.BtnContact = new System.Windows.Forms.Button();
             this.BtnInventory = new System.Windows.Forms.Button();
             this.PnlAdminMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -63,13 +62,12 @@ namespace FinalProject
             this.TlpAdminNavigation.ColumnCount = 1;
             this.TlpAdminNavigation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TlpAdminNavigation.Controls.Add(this.BtnLogOut, 0, 9);
-            this.TlpAdminNavigation.Controls.Add(this.BtnUsersForm, 0, 7);
             this.TlpAdminNavigation.Controls.Add(this.pictureBox1, 0, 0);
             this.TlpAdminNavigation.Controls.Add(this.BtnTransactions, 0, 2);
             this.TlpAdminNavigation.Controls.Add(this.BtnProducts, 0, 3);
             this.TlpAdminNavigation.Controls.Add(this.BtnCategories, 0, 4);
-            this.TlpAdminNavigation.Controls.Add(this.BtnContact, 0, 6);
             this.TlpAdminNavigation.Controls.Add(this.BtnInventory, 0, 5);
+            this.TlpAdminNavigation.Controls.Add(this.BtnUsersForm, 0, 6);
             this.TlpAdminNavigation.Location = new System.Drawing.Point(6, 3);
             this.TlpAdminNavigation.Name = "TlpAdminNavigation";
             this.TlpAdminNavigation.RowCount = 10;
@@ -98,7 +96,7 @@ namespace FinalProject
             // 
             // BtnUsersForm
             // 
-            this.BtnUsersForm.Location = new System.Drawing.Point(3, 511);
+            this.BtnUsersForm.Location = new System.Drawing.Point(3, 454);
             this.BtnUsersForm.Name = "BtnUsersForm";
             this.BtnUsersForm.Size = new System.Drawing.Size(228, 42);
             this.BtnUsersForm.TabIndex = 7;
@@ -148,17 +146,6 @@ namespace FinalProject
             this.BtnCategories.UseVisualStyleBackColor = true;
             this.BtnCategories.Click += new System.EventHandler(this.BtnCategories_Click);
             // 
-            // BtnContact
-            // 
-            this.BtnContact.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnContact.Location = new System.Drawing.Point(3, 454);
-            this.BtnContact.Name = "BtnContact";
-            this.BtnContact.Size = new System.Drawing.Size(228, 42);
-            this.BtnContact.TabIndex = 2;
-            this.BtnContact.Text = "Supplier";
-            this.BtnContact.UseVisualStyleBackColor = true;
-            this.BtnContact.Click += new System.EventHandler(this.BtnUsers_Click);
-            // 
             // BtnInventory
             // 
             this.BtnInventory.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -202,7 +189,6 @@ namespace FinalProject
         private System.Windows.Forms.Button BtnProducts;
         private System.Windows.Forms.Button BtnCategories;
         private System.Windows.Forms.Panel PnlAdminMain;
-        private System.Windows.Forms.Button BtnContact;
         private System.Windows.Forms.Button BtnTransactions;
         private System.Windows.Forms.Button BtnUsersForm;
         private System.Windows.Forms.Button BtnInventory;
